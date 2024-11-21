@@ -1,0 +1,25 @@
+.top-section {
+    display: block;
+    color: rgb(224, 79, 11);
+}
+
+.cuerpo-1 {
+    background-color: rgb(93, 31, 251);
+    color: white;
+    display:inline-flex;
+    flex-direction: row;
+}
+
+.cuerpo-2 {
+    background-color: rgb(245, 52, 65);
+    color: white;
+    display:inline-flex;
+}
+
+.pie-gris {
+    color: rgb(154, 153, 153);
+}
+
+h3 {
+    font-size: larger;
+}
