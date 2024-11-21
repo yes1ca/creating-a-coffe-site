@@ -16,6 +16,23 @@
     display:inline-flex;
 }
 
+button {
+
+    background-color: rgb(245, 52, 65); /* Color inicial del botón */
+  
+    color: white;
+  
+    padding: 10px 20px;
+  
+    border: none;
+  
+    cursor: pointer;
+  
+  }
+  button:hover{
+    background-color: green; /*Color del botón cuando el ratón pasa por encima*/
+  }
+
 .pie-gris {
     color: rgb(154, 153, 153);
 }
