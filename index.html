@@ -6,6 +6,8 @@
     <title>Cafetería</title>
     <!--Viculando el archivo CSS externo-->
     <link href="style.css" rel="stylesheet">
+    <!--Adiciona el ícono a la pestaña-->
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-starbucks-3215495-2673913.png?f=webp">
 </head>
 
 <body>
@@ -13,20 +15,22 @@
     <header>
         <navbar class="navbar">
             <nav class="navbar-left">
-                <img src="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-Logo.png" alt="Logo Starbucks">
+                <img src="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-Logo.png" alt="Logo Starbucks"></a>
                 <ul>
-                    <li><a href="">MENÚ</a></li>
-                    <li><a href="">REWARDS</a></li>
+                    <li><a href="https://www.starbucks.com.mx/menu" target="_blank">MENÚ</a></li>
+                    <li><a href="https://rewards.starbucks.mx/" target="_blank">REWARDS</a></li>
                 </ul>
             </nav>
 
             <nav class="navbar-right">
                 <ul>
-                    <li><a href="">Localizar tienda</a></li>
-                    <li><a href="">Ingresar</a></li>
-                    <li><a href="">Únete</a></li>
+                    <li><a href="https://www.starbucks.com.mx/stores" target="_self">Localizar tienda</a></li>
+                    
+
                 </ul>
             </nav>
+            <a href="https://rewards.starbucks.mx/login" class="btn" id="ingresar"><button>Ingresar</button></a>
+            <a href="https://rewards.starbucks.mx/register" class="btn" id="unete"><button>Únete</button></a>
         </navbar> 
     </header>
 
@@ -79,11 +83,31 @@
             <p>
                 Trae tu vaso o termo y ontén $8 de descuento en tu bebida
             </p>
-        <button>Conoce más</button>
+        <a href="https://www.starbucks.com.mx/articulo/todo-y-todos-por-el-planeta-0" class="btn" id="termos"><button>Conoce más</button></a>
         </section>
     </section>
 
-    <!--Parte baja-->
+    <section class="container-vert" id="container-vert-1">
+        <a href="https://www.starbucks.com.mx/seccion/boletines" target="_blank"><img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FNoticias.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max" alt="Noticias"></a>
+        <section class="cuerpo">
+        <p>
+            Consulta los eventos más recientes.
+        </p>
+        <a href="https://www.starbucks.com.mx/seccion/boletines" class="btn" id="eventos"><button>Aquí</button></a>
+        </section>
+    </section>
+
+    <section class="container-vert" id="container-vert-2">
+        <a href="https://www.starbucks.com.mx/seccion/terminos-y-condiciones" target="_blank"><img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FTC.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max" alt="Promos"></a>
+        <section class="cuerpo">
+        <p>
+            Términos y condiciones.
+        </p>
+        <a href="https://www.starbucks.com.mx/seccion/terminos-y-condiciones" class="btn" id="promo"><button>Ver más</button></a>
+        </section>
+    </section>
+
+    <!--Footer medio-->
     <h3>Sobre Nosotros</h3>
         <ul>
             <li>Trabaja con nosotros</li>
@@ -96,17 +120,25 @@
             <li>Formas de comprar</li>
         </ul>
         
-    <!--Footer-->
-    <footer class="pie-gris">
-        <ul>
-            <li>Accesibilidad Web</li>
-            <li>Aviso de Privacidad</li>
-            <li>Boletines</li>
-            <li>Condiciones de Uso</li>
-            <li>Mapas del Sitio</li>
-            <li>Configuración de Cookies</li>
+    <!--Footer bajo-->
+    <footer class="f-horizontal">
+        <ul class="rrss">
+            <li class="icon-elem"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="icon-elem"><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li class="icon-elem"><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
         </ul>
-        2024. Cafetería company. Todos los derechos reservados.
+        <ul class="menu">
+            <li class="mel"><a href="" class="menu-i" target="_blank">Accesibilidad Web</a></li>
+            <li class="mel"><a href="" class="menu-i" target="_blank">Aviso de Privacidad</a></li>
+            <li class="mel"><a href="" class="menu-i" target="_blank">Boletines</a></li>
+            <li class="mel"><a href="" class="menu-i" target="_blank">Condiciones de Uso</a></li>
+            <li class="mel"><a href="" class="menu-i" target="_blank">Mapas del Sitio</a></li>
+            <li class="mel"><a href="" class="menu-i" target="_blank">Configuración de Cookies</a></li>
+        </ul>
+        <p>Ⓒ 2024. Starbucks Cofee Company. Reservados todos los derechos</p>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
