@@ -1,10 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -107,20 +105,31 @@ a {
     flex-direction: row-reverse;
 }
 
+.container-2 {
+    display: flex;
+}
+
 .container-vert {
     margin-top: 30px;
-    width: 55vw;
+    width: 40vw;
     height: auto;
-
+    align-items: center;
     display: flex;
     flex-direction: row;
 
     color: white;
 }
 
+.container-vert img{
+    width: 635px;
+    height: auto;
+    padding: 0%;
+}
+
 #container-vert-1{
     background-color: rgb(250, 116, 176);
     flex-direction: column;
+    margin-right: 1.5%;
 }
 
 #container-vert-2{
@@ -144,6 +153,28 @@ a {
     background-color:rgb(71, 217, 250); /* Color inicial del botón */
     color: rgb(1, 130, 159);
     border-color: rgb(1, 130, 159);
+}
+
+.f-vert {
+   
+    margin-top: 30px;
+    width: 85vw;
+    height: auto;
+    display: flex;
+    
+
+    color: gray;
+    
+}
+
+.menu-v {
+    color: rgb(156, 155, 155);
+}
+
+.f-vert ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none; 
 }
 
 .f-horizontal {
