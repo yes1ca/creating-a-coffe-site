@@ -100,6 +100,7 @@ a {
 }
 
 #container-blanco{
+    background-color: pink;
     display: flex;
     align-items: center;
     justify-content: center;
