@@ -2,9 +2,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
 }
 
 nav img{
@@ -43,6 +44,10 @@ nav img{
     cursor: pointer;
 }
 
+.botones-verde{
+    justify-content: space-between;
+}
+
 #ingresar button{
     background-color: white; /* Color inicial del botón */
     color: black;
@@ -59,6 +64,12 @@ nav img{
     border-color: black;
 }
 
+#unete button:hover{
+    background-color: rgb(99, 99, 99);/*Color del botón cuando el ratón pasa por encima*/
+    color: white;
+    border-color: rgb(99, 99, 99);
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -67,92 +78,46 @@ a {
 
 .container{
     margin-top: 30px;
-    width: 85vw;
+    width: 100%;
     height: auto;
 
     display: flex;
     flex-direction: row;
 
-    color: white;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.container img{
-    width: 650px;
+#container-verde{
+    color: white;
+    background-color: #1e3932;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+
+}
+
+#container-blanco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
     height: auto;
 }
 
 .cuerpo {
-    padding: 9%;
-    text-align: center;
-    font-size: 17px;
-}
-
-#container-green{
-    background-color: #1e3932;
-}
-
-#container-blue {
-    background-color: rgb(93, 31, 251);
-    flex-direction: row-reverse;
-}
-
-#container-red{
-    background-color: #d50032;    
-}
-
-#container-green-2{
-    background-color: #1e3932;
-    flex-direction: row-reverse;
-}
-
-.container-2 {
     display: flex;
-}
-
-.container-vert {
-    margin-top: 30px;
-    width: 40vw;
-    height: auto;
     align-items: center;
-    display: flex;
-    flex-direction: row;
-
-    color: white;
+    justify-content:center;
+    flex-wrap: wrap;
 }
 
-.container-vert img{
-    width: 610px;
-    height: auto;
+.icons img{
+    width: auto;
+    height: 90px;
     padding: 0%;
-}
-
-#container-vert-1{
-    background-color: rgb(250, 116, 176);
-    flex-direction: column;
-    margin-right: 1.5%;
-}
-
-#container-vert-2{
-    background-color: rgb(71, 217, 250);
-    flex-direction: column;
-}
-
-#termos button{
-    background-color: #d50032; /* Color inicial del botón */
-    color: white;
-    border-color: white;
-}
-
-#eventos button{
-    background-color: rgb(250, 116, 176); /* Color inicial del botón */
-    color: #b8022c;
-    border-color: #b8022c;
-}
-
-#promo button{
-    background-color:rgb(71, 217, 250); /* Color inicial del botón */
-    color: rgb(1, 130, 159);
-    border-color: rgb(1, 130, 159);
 }
 
 .f-vert {
