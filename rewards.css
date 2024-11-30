@@ -1,13 +1,3 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0%;
-}
-
 nav img{
     height: 60px;
     width: auto;
@@ -21,6 +11,10 @@ nav img{
     height: 85px;
     font-size: 19px;
     font-weight: 600;
+
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 
 .navbar-left {
@@ -76,8 +70,16 @@ a {
     margin: 25px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+
 .container{
-    margin-top: 30px;
     width: 100%;
     height: auto;
 
@@ -85,62 +87,288 @@ a {
     flex-direction: row;
 
     flex-wrap: wrap;
-    align-items: flex-start;
+    padding-top: 85px;
 }
 
-#container-verde{
+.container-fijo{
     color: white;
     background-color: #1e3932;
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
-    width: 40%;
-    height: 100vh;
+    width: 35%;
+    height: 80vh;
+
+    position: fixed;
+    top: 1;
+    padding: 50px;
+    margin: 0;
+    overflow: hidden;
+
 
 }
 
-#container-blanco{
-    background-color: pink;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
+.container-fijo img{
+    width: 300px;
     height: auto;
 }
 
-.cuerpo {
+.container-fijo h1{
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 0.06cm;
+}
+
+.container-movil{
+    background-color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
+    width: 65%;
+    height: 40%;
+    
+    margin-left: 39vw;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center;
+    width: 125vh;
+}
+
+.cuerpo h2{
+    line-height: 0;
+}
+
+.icons {
+    width: 165px;
+    padding: 7px;
+    overflow: hidden;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.all-icons-0 {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.all-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 50px;
 }
 
 .icons img{
     width: auto;
-    height: 90px;
+    height: 80px;
     padding: 0%;
+}
+
+#estrellas{
+    background-color:#ecebe5;
+    margin-top: 20px;
+}
+
+.icon-e {
+    width: 330px;
+    overflow: hidden;
+    margin: 15px;
+    padding-left: 00px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.06cm;
+}
+
+#estrellas img{
+    width: 500px;
+}
+
+.steps-0{
+    display: flex;
+    margin-right: 60px;
+}
+.icon-g{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-content: flex-start;
+}
+
+.icon-g img{
+    width: auto;
+    height: 120px;
+    padding: 0%;
+    margin: 0;
+}
+.icon-gif img{
+    width: 350px;
+    height: 220px;
+}
+.g-text{
+    width: 190px;
+    align-content: center;
+    margin-left: 0px;
+    font-size: medium;
+}
+.image-g img{
+    width: 300px;
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+.video {
+    margin-top: 70px;
+    margin-right: 20px;
+}
+
+#ordena, #personaliza, #conoce{
+    background-color: #ecebe5 ;
+}
+.icon-star{
+    display: flex;
+}
+.icon-o{
+    display: flex;
+}
+.o-text{
+    width: 117px;
+    align-content: center;
+    margin-left: 0px;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 0.03cm;
+
+}
+.icon-o img{
+    height: 120px;
+    margin-left: 20px;
+}
+
+.linea-1{
+    display: flex;
+    margin-right: 20px;
+}
+
+.icon-star img{
+    width: 50px;
+    margin-top: 50px;
+}
+
+.icon-p{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.p-text-1{
+    width:215px;
+    font-size: medium;
+    font-weight: bold;
+}
+.p-text-2{
+    width: 230px;
+    font-size: medium;
+}
+
+.image-p img{
+    width: 400px;
+}
+
+#experiencia img{
+    height: 220px;
+}
+
+.ex-text{
+    width: 400px;
+    text-align: center;
+    line-height: 0.59cm;
+}
+
+.descarga{
+    background-color: pink;
+    width: 200px;
+}
+
+#conoce img{
+    height: 180px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.all-c{
+    display: flex;
+}
+
+.c-text-1{
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.c-text-2{
+    margin-bottom: 10px;
+}
+
+.icon-c{
+    margin: 30px;
+}
+
+.aqui{
+    color:  #1e3932;
+    text-decoration: underline;
+}
+
+.imagen img{
+    width: 500px;
 }
 
 .f-vert {
    
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-left: 430px;
     width: 85vw;
     height: auto;
     display: flex;
-    
+    flex-direction: row;
+    justify-content: flex-start;
 
     color: gray;
     
 }
 
-.menu-v {
-    color: rgb(156, 155, 155);
-}
-
-.f-vert ul {
+.f-infi {
     display: flex;
     flex-direction: column;
-    list-style: none; 
+    margin-left: 20px;
+    line-height: 0.005px;
+}
+
+.f-infd {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    line-height: 0.005px;
+}
+
+.menu-v {
+    color: rgb(156, 155, 155);
 }
 
 .f-horizontal {

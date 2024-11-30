@@ -111,19 +111,21 @@ a {
 
 .container-vert {
     margin-top: 30px;
-    width: 40vw;
+    width: 41.6vw;
     height: auto;
     align-items: center;
     display: flex;
     flex-direction: row;
+    align-content: space-around;
 
     color: white;
 }
 
 .container-vert img{
-    width: 610px;
+    width: 660px;
     height: auto;
     padding: 0%;
+    margin: 0;
 }
 
 #container-vert-1{
@@ -161,7 +163,6 @@ a {
     width: 85vw;
     height: auto;
     display: flex;
-    
 
     color: gray;
     
