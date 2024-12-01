@@ -5,7 +5,6 @@ Esta es una práctica, parte del módulo de CSS usando de base la página de Sta
 - Localiza tu tienda
 - Inicia Sesión
 - Únete ahora
-
 El contenido incluye secciones con imágenes y links que redirigen hacia la misma página de starbucks o hacia algunos links externos igualmente pertenecientes a starbucks, así como texto de diferente tamaño con fondos de color distintos.
 
 # Clase 1. Inicio de homepage Starbucks
@@ -27,9 +26,9 @@ En general, llegamos a utilizar diferentes componentes basando todo en display:f
 
 ## Código-clase 2
 Imágen de código HTML
-![Vista previa]()
+![Vista previa](https://ibb.co/tKmJ1nR)
 Imágen CSS
-![Vista previa]()
+![Vista previa](https://ibb.co/3CGRS69)
 
 # Clase 3. Inicio página Rewards
 Una vez con la página principal lista, avanzamos a diseñar lo que es la página de REWARDS, el sensei ahondó un poco más en detalle en el tema de las cajas, display:flex y flex:direction pues eran componentes básicos que necesitaremos para continuar con la sesión.
