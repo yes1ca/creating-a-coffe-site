@@ -1,0 +1,183 @@
+
+.Hnavbar{
+    width: 100%;
+    background-color: white;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin-left: 8em;
+    height: 4em;
+    font-size: 19px;
+    font-weight: 600;
+    width: 80%;
+
+    background-color: rgb(246, 47, 47);
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    background-color: aqua;
+}
+.navbar-left img{
+    height: 3.1em;
+    width: auto;
+    margin-top: 2%;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 18em;
+    height: 4em;
+    background-color: rgb(217, 255, 0);
+}
+.navbar-right img{
+    height: 1em;
+    width: auto;
+    margin-top: 2%;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rosybrown;
+}
+
+.btn button {
+    padding: 10px 20px;
+    border: solid;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.botones-verde{
+    justify-content: space-between;
+}
+
+#ingresar button{
+    background-color: white; /* Color inicial del botón */
+    color: black;
+    border-color: black;
+}
+#ingresar button:hover{
+    background-color: whitesmoke; /*Color del botón cuando el ratón pasa por encima*/
+    color: gray;
+}
+
+#unete button{
+    background-color: black; /* Color inicial del botón */
+    color: white;
+    border-color: black;
+}
+
+#unete button:hover{
+    background-color: rgb(99, 99, 99);/*Color del botón cuando el ratón pasa por encima*/
+    color: white;
+    border-color: rgb(99, 99, 99);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 25px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    
+    justify-content: center;
+    align-items: center;
+    height: auto
+    width: 80%;
+}
+
+.container p{
+    font-size: 130%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.Título{
+    border-top-style: solid;
+    border-top-color: rgb(33, 33, 33);
+    border-bottom-style: solid;
+    border-bottom-color: rgb(33, 33, 33);
+    border-width: 1px;
+}
+
+.b-links{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+    width: 25%;
+    background-color: violet;
+}
+.b-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.b-links img{
+    width: 12em;
+    background-color: #1e3932;
+    border-radius: 50%;
+}
+
+.btn-i button {
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rrss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+       
+}
+
+.icon-elem {
+    list-style: none;
+    font-size: 32px;
+}
+
+.icon-elem:hover {
+   transform: translateY(-10px); 
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    list-style: none;
+    color: rgb(156, 155, 155);
+}
+
+.menu-i {
+    color: rgb(156, 155, 155);
+}
