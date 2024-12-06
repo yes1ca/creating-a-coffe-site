@@ -164,6 +164,31 @@ body {
     background-color: #1e3932;
 }
 
+.f-vert{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-right: 50em;
+}
+.f-v-i{
+    margin-right: 5vh;
+}
+.f-vert-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 0spx;   
+    padding-left 0; 
+
+}
+.f-vert-text a{
+    color: rgb(111, 111, 111);
+    padding-left 0; 
+    line-height: 0;
+
+}
+
+
 .rrss {
     display: flex;
     justify-content: center;
@@ -195,4 +220,17 @@ body {
 
 .menu-i {
     color: rgb(156, 155, 155);
+}
+
+/* Diseño responsivo*/
+@media (min-width:700px) and (max-width:1050px){
+    .Hnavbar{
+        display: flex;
+        justify-content: center;
+
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
 }
