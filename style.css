@@ -1,39 +1,49 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-nav img{
-    height: 60px;
-    width: auto;
+.Hnavbar{
+    width: 100%;
+    background-color: white;
 }
-
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: space-evenly;
     align-items: center;
-    height: 85px;
+    margin-left: 8em;
+    height: 4em;
     font-size: 19px;
     font-weight: 600;
+    width: 100%;
+    margin-bottom: 1vh;
+    margin-left: 0;
 }
-
 .navbar-left {
     display: flex;
     flex-direction: row;
-    margin-right: 370px;
+    height: 4em;
 }
-
-.navbar ul {
+.navbar-left img{
+    height: 3.1em;
+    width: auto;
+}
+.navbar-right {
     display: flex;
     flex-direction: row;
-    list-style: none;
+    justify-content: flex-end;
+    margin-left: 18em;
+    height: 4em;
 }
-
+.navbar-right img{
+    height: 1em;
+    width: auto;
+    margin-top: 2%;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 .btn button {
     padding: 10px 20px;
     border: solid;
@@ -42,7 +52,9 @@ nav img{
     border-radius: 50px;
     cursor: pointer;
 }
-
+.botones-verde{
+    justify-content: space-between;
+}
 #ingresar button{
     background-color: white; /* Color inicial del botón */
     color: black;
@@ -52,11 +64,24 @@ nav img{
     background-color: whitesmoke; /*Color del botón cuando el ratón pasa por encima*/
     color: gray;
 }
-
 #unete button{
     background-color: black; /* Color inicial del botón */
     color: white;
     border-color: black;
+}
+#unete button:hover{
+    background-color: rgb(99, 99, 99);/*Color del botón cuando el ratón pasa por encima*/
+    color: white;
+    border-color: rgb(99, 99, 99);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 a {
@@ -64,7 +89,12 @@ a {
     text-decoration: none;
     margin: 25px;
 }
-
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
 .container{
     margin-top: 30px;
     width: 85vw;
@@ -72,13 +102,18 @@ a {
 
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
     color: white;
 }
 
 .container img{
     width: 650px;
     height: auto;
+    padding: 0;
+    margin: 0%;
 }
 
 .cuerpo {
@@ -110,7 +145,7 @@ a {
 }
 
 .container-vert {
-    margin-top: 30px;
+    margin-top: 3em;
     width: 41.6vw;
     height: auto;
     align-items: center;
@@ -156,26 +191,26 @@ a {
     color: rgb(1, 130, 159);
     border-color: rgb(1, 130, 159);
 }
-
-.f-vert {
-   
-    margin-top: 30px;
-    width: 85vw;
-    height: auto;
+.f-vert{
     display: flex;
-
-    color: gray;
-    
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10%;
 }
-
-.menu-v {
-    color: rgb(156, 155, 155);
+.f-v-i{
+    margin-right: 5vh;
 }
-
-.f-vert ul {
+.f-vert-text{
     display: flex;
     flex-direction: column;
-    list-style: none; 
+    line-height: 0;   
+    padding-left 0;
+}
+.f-vert-text a{
+    color: rgb(111, 111, 111);
+    padding-left 0; 
+    line-height: 0;
 }
 
 .f-horizontal {
@@ -222,3 +257,142 @@ a {
 .menu-i {
     color: rgb(156, 155, 155);
 }
+
+/* Diseño responsivo*/
+@media screen and (max-width:800px) and (orientation: portrait){  
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin-top: 1em;
+        margin-left: 0;
+        height: 4em;
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 4vh;
+        width: 100%;
+    }
+    .navbar-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 0;
+    }
+    .botones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .btn button {
+        padding: 0.06em 0.03em;
+        border: solid;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .botones-verde{
+        justify-content: space-between;
+    }
+    #ingresar button{
+        background-color: white; /* Color inicial del botón */
+        color: black;
+        border-color: black;
+    }
+    #ingresar button:hover{
+        background-color: whitesmoke; /*Color del botón cuando el ratón pasa por encima*/
+        color: gray;
+    }
+    #unete button{
+        background-color: black; /* Color inicial del botón */
+        color: white;
+        border-color: black;
+    }
+    #unete button:hover{
+        background-color: rgb(99, 99, 99);/*Color del botón cuando el ratón pasa por encima*/
+        color: white;
+        border-color: rgb(99, 99, 99);
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .container{
+        margin-top: 1em;
+        width: 30em;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        color: white;
+    }
+    #container-blue{
+        display: flex;
+        flex-direction: column;
+    }
+    #container-green-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container img{
+        width: 30em;
+        height: auto;
+        padding: 0;
+        margin: 0%;
+    }
+    .cuerpo {
+        padding: 9%;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-vert {
+        margin-top: 3em;
+        width: 30em;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+    
+        color: white;
+    }
+    
+    .container-vert img{
+        width: 30em;
+        height: auto;
+        padding: 0%;
+        margin: 0;
+    }
+    #termos button{
+        background-color: #d50032; /* Color inicial del botón */
+        color: white;
+        border-color: white;
+    }
+    
+    #eventos button{
+        background-color: rgb(250, 116, 176); /* Color inicial del botón */
+        color: #b8022c;
+        border-color: #b8022c;
+    }
+    
+    #promo button{
+        background-color:rgb(71, 217, 250); /* Color inicial del botón */
+        color: rgb(1, 130, 159);
+        border-color: rgb(1, 130, 159);
+    }
+}    

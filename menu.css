@@ -13,8 +13,9 @@
     height: 4em;
     font-size: 19px;
     font-weight: 600;
-    width: 80%;
+    width: 100%;
     margin-bottom: 4vh;
+    margin-left: 0;
 }
 
 .navbar-left {
@@ -25,7 +26,6 @@
 .navbar-left img{
     height: 3.1em;
     width: auto;
-    margin-top: 2%;
 }
 
 .navbar-right {
@@ -179,15 +179,12 @@ body {
     flex-direction: column;
     line-height: 0spx;   
     padding-left 0; 
-
 }
 .f-vert-text a{
     color: rgb(111, 111, 111);
     padding-left 0; 
     line-height: 0;
-
 }
-
 
 .rrss {
     display: flex;
@@ -223,14 +220,115 @@ body {
 }
 
 /* Diseño responsivo*/
-@media (min-width:700px) and (max-width:1050px){
-    .Hnavbar{
+@media screen and (max-width:800px) and (orientation: portrait){  
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin-top: 1em;
+        margin-left: 0;
+        height: 4em;
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 4vh;
+        width: 100%;
+    }
+    .navbar-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 0;
+    }
+    .botones {
         display: flex;
         justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .btn button {
+        padding: 0.06em 0.03em;
+        border: solid;
+        font-size: 8px;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .botones-verde{
+        justify-content: space-between;
+    }
+    #ingresar button{
+        background-color: white; /* Color inicial del botón */
+        color: black;
+        border-color: black;
+    }
+    #ingresar button:hover{
+        background-color: whitesmoke; /*Color del botón cuando el ratón pasa por encima*/
+        color: gray;
+    }
+    #unete button{
+        background-color: black; /* Color inicial del botón */
+        color: white;
+        border-color: black;
+    }
+    #unete button:hover{
+        background-color: rgb(99, 99, 99);/*Color del botón cuando el ratón pasa por encima*/
+        color: white;
+        border-color: rgb(99, 99, 99);
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        margin: 25px;
+    }
+
+    .container{
+        width: 100%;
 
     }
-    .container{
+    .container h1{
         display: flex;
-        justify-content: center;
+        width: 80%;
     }
+    .Título{
+        border-top-style: solid;
+        border-top-color: rgb(33, 33, 33);
+        border-bottom-style: solid;
+        border-bottom-color: rgb(33, 33, 33);
+        border-width: 1px;
+        margin-top: 2.5vh;
+
+    }
+
+    .b-links{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.7em;
+        width: 37%;
+        font-size: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        margin-left: 0.5em;
+    }
+
+    .b-imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+    }
+
+    .f-vert{
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin-right: 1em;
+    }
+
 }
