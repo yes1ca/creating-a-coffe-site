@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicia Sesión</title>
+    <title>Registro</title>
     <!--Viculando el archivo CSS externo-->
-    <link href="LogIn.css" rel="stylesheet">
+    <link href="registro.css" rel="stylesheet">
     <!--Adiciona el ícono a la pestaña-->
     <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-starbucks-3215495-2673913.png?f=webp">
 </head>
@@ -32,53 +32,62 @@
     <section class="container">
         <!--Contenido fijo/izq-->
         <section class="container-fijo">
-            <p>Ingresa a tu cuenta</p>
-            <img src="https://cdn3.emoji.gg/default/microsoft/glowing-star.png" alt="Estrella">
+            <p>Registro</p>
         </section>
 
         <!--Contenido móvil/der-->
         <section class="container-movil">
-            <section class="login">
-                
-                <form action="">
-                    <section class="login-1">
-                        <p>* Ingresa tu email</p>
-                    </section>
-                    <section class="input-box">
-                        <input type="text" placeholder="*Ingresa tu email" required>
-                    </section>
-                    <section class="login-1">
-                        <p>* Ingresa tu contraseña</p>
-                    </section>
-                    <section class="input-box">
-                        <input type="password" placeholder="*Ingresa tu contraseña" required>
-                    </section>
-                    <section class="olvide">
-                        <a href="#" class="btn" id="senha"><button>Olvidé mi contraseña</button></a>
-                    </section>
-                    <section class="iniciar">
-                        <a href="#" class="btn" id="iniciar"><button>Iniciar Sesión</button>
-                    </section>
-                </form>
+            <section class="caja">
+                <section class="registro">
+                    
+                    <form id="formulario">
+                        <h2>Información personal (*) campos obligatorios</h2>
+                        <p>¡Regístrate y comienza a vivir la experiencia Starbucks Rewards™!</p>
+
+                        <label for="name">*Nombre(s)</label>
+                        <input type="text" id="name" name="name"placeholder="Nombre(s)*" required>
+
+                        <label for="lastname">*Apellido paterno</label>
+                        <input type="text" id="lastname" name="lastname"placeholder="Apellido paterno*" required>
+                        
+                        <label for="email">*Email</label>
+                        <input type="text" id="email" name="email"placeholder="Email*" required>
+
+                        <label for="Cemail">*Confirmar Email</label>
+                        <input type="text" id="Cemail" name="Cemail"placeholder="Confirmar Email*" required>
+
+                        <label for="Password">*Contraseña</label>
+                        <input type="password" id="Password" name="Password" placeholder="Password*" required>
+
+                        <label for="CPassword">*Confirmar contraseña</label>
+                        <input type="password" id="CPassword" name="CPassword" placeholder="Confirmar contraseña*" required>
+
+                        <h2>Fecha de Nacimiento (Opcional)</h2>
+                        <h4>Agrega tu fecha de cumpleaños para otorgarte una bebida gratis en el mes de tu cumpleaños</h4>
+                        <section class="cumple">
+                            <label><input type="date"></label>
+                        </section>
+                        <h2>Ingresa a Starbucks Rewards</h2>
+                        <p>Únete a Starbucks Rewards™ y disfruta de beneficios especiales.</p>
+                            <label><input type="checkbox" id="checkbox">Quiero recibir una Starbucks Card digital instantánea</label>
+                            <label><input type="checkbox" id="checkbox">Quiero unirme con una Starbucks Card que ya tengo</label>
+                        
+                        <h2>Términos y condiciones</h2>
+                            <label><input type="checkbox" id="checkbox">Deseo recibir novedades sobre productos y promociones</label>
+                            <label><input type="checkbox" id="checkbox">Acepto los Términos y Condiciones y Aviso de Privacidad</label>
+
+                        <button type="submit" id="fin">Registrarme</button>
+                    </form>
+                </section>
             </section>
     
             <section class="black" id="separte">
                 <p>¡SER PARTE DE STARBUCKS REWARDS™ ES MUY FÁCIL!</p>
             </section>
 
-            <section class="unete">
-                <section class="unete-text">
-                    <h1>Únete a Starbucks Rewards</h1>
-                    <p>Descarga la aplicación, registrate, obtén estrellas, disfruta de café gratis y algo más.</p>
-                </section>
-                <section class="boton-e-img">
-                    <a href="https://rewards.starbucks.mx/register" class="btn" id="unete-ahora"><button>¡Únete ahora!</button></a>
-                    <img src="https://rewards.starbucks.mx/img/2023/06/chica-sbx.png">
-                </section>
-
-            </section>
+            
             <!--Footer bajo-->
-            <section class="f-vert">
+            <footer class="f-vert">
                 <section class="f-v-i">
                     <section class="Top">
                         <h3>Sobre Nosotros</h3>
@@ -97,7 +106,7 @@
                         <a href="https://www.starbucks.com.mx/seccion/experiencia-starbucks" class="menu-v">Formas de comprar</a>
                     </section>
                 </section>
-            </section>
+            </footer>
 
             <footer class="f-horizontal">
                 <ul class="rrss">
