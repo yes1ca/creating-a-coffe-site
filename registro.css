@@ -131,19 +131,25 @@ body {
 .caja {
     background-color: #ecebe5;
     width: 100%;
+    align-content: center;
 }
 .registro {
     width: 35em;
     display: flex;
     padding: 0;
     align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15em;
 }
 #formulario{
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: medium;
 }
 #formulario h2{
     font-weight: bolder;
@@ -153,10 +159,12 @@ body {
     font-weight: bold;
     font-size: smaller;
     color: #0000008f;
+    margin-top: 0;
 }
 #formulario p{
     font-weight: bold;
     font-size: medium;
+    margin-top: 0;
     color: #0000008f;
 }
 input{
@@ -166,14 +174,25 @@ input{
     border-bottom: 1px solid gray;
     background-color: transparent;
 }
-#fin button{
+#form{
+    width: 90%;
+}
+#formulario button{
     background-color: #00a862;/*Color del botón cuando el ratón pasa por encima*/
     color: white;
     border-color: transparent;
     border-radius: 30px;
     font-weight: bold;
     font-size: medium;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 65%;
+
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
 }
+
 /*CUERPO - black*/
 .black{
     color: white;
