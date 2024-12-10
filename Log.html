@@ -3,15 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia Sesión</title>
+    <!--Viculando el archivo CSS externo-->
     <link href="LogIn.css" rel="stylesheet">
-    <title>Document</title>
+    <!--Adiciona el ícono a la pestaña-->
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-starbucks-3215495-2673913.png?f=webp">
 </head>
 <body>
-    <section class="descarga">
-        <h1>Descargala ya</h1>
-        <section class="apple">
-            <img src="https://rewards.starbucks.mx/items/4fe2e05c02a54cec809c3926b2fc1f23.png" alt="App store">
+    <!--Encabezado-->
+    <header class="Hnavbar">
+        <navbar class="navbar">
+            <nav class="navbar-left">
+                <a href="./index.html"><img src="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-Logo.png" alt="Logo Starbucks"></a>
+                    <a href="./menu.html" target="_blank">MENÚ</a>
+                    <a href="./rewards.html" target="_blank">REWARDS</a>
+            </nav>
+            <nav class="navbar-right">
+                <a href="https://www.starbucks.com.mx/stores" target="_self"><img src="https://www.redcross.org/content/dam/icons/general-icons/map-pin/Map-Pin-1000x1000-B-Pl.png.transform/282/q70/feature/image.png">Localizar tienda</a>
+                <nav class="botones">
+                    <a href="https://rewards.starbucks.mx/login" class="btn" id="ingresar"><button>Inicia Sesión</button></a>
+                    <a href="https://rewards.starbucks.mx/register" class="btn" id="unete"><button>Únete Ahora</button></a>
+                </nav>
+            </nav>
+        </navbar> 
+    </header> 
+
+    <!--Contenido-->
+    <section class="container">
+        <!--Contenido fijo/izq-->
+        <section class="container-fijo">
+            <p>Ingresa a tu cuenta</p>
+            <img src="https://cdn3.emoji.gg/default/microsoft/glowing-star.png" alt="Estrella">
+        </section>
+
+        <!--Contenido móvil/der-->
+        <section class="container-movil">
+            <section class="login">
+                <form action="">
+                    <section class="login-1">
+                        <p>* Ingresa tu email</p>
+                    </section>
+                    <section class="input-box">
+                        <input type="text" placeholder="*Ingresa tu email" required>
+                    </section>
+                    <section class="login-1">
+                        <p>* Ingresa tu contraseña</p>
+                    </section>
+                    <section class="input-box">
+                        <input type="text" placeholder="*Ingresa tu contraseña" required>
+                    </section>
+                    <section class="olvide">
+                        <a href="#" class="btn" id="senha"><button>Olvidé mi contraseña</button></a>
+                    </section>
+                    <section class="iniciar">
+                        <a href="#" class="btn" id="iniciar"><button>Iniciar Sesión</button>
+                    </section>
+                </form>
+            </section>
+    
+            <section class="black" id="separte">
+                <p>¡SER PARTE DE STARBUCKS REWARDS™ ES MUY FÁCIL!</p>
+            </section>
+
+            <section class="unete">
+                <section class="unete-text">
+                    <h1>Únete a Starbucks Rewards</h1>
+                    <p>Descarga la aplicación, registrate, obtén estrellas, disfruta de café gratis y algo más.</p>
+                </section>
+                <section class="boton-e-img">
+                    <a href="https://rewards.starbucks.mx/register" class="btn" id="unete-ahora"><button>¡Únete ahora!</button></a>
+                    <img src="https://rewards.starbucks.mx/img/2023/06/chica-sbx.png">
+                </section>
+
+            </section>
+            <!--Footer bajo-->
+            <section class="f-vert">
+                <section class="f-v-i">
+                    <section class="Top">
+                        <h3>Sobre Nosotros</h3>
+                    </section>
+                    <section class="f-vert-text">
+                        <a href="https://historias.starbucks.com/es/" class="menu-v">Historias</a>
+                    </section>
+                </section>
+                <section class="f-v-i">
+                    <section class="Top">
+                        <h3>Atención al Cliente</h3>
+                    </section>
+                    <section class="f-vert-text">
+                        <a href="https://rewards.starbucks.mx/atencion-cliente" class="menu-v">Contáctanos</a>
+                        <a href="https://alsea.interfactura.com/RegistroDocumento.aspx?opc=Starbucks" class="menu-v">Facturas electrónicas</a>
+                        <a href="https://www.starbucks.com.mx/seccion/experiencia-starbucks" class="menu-v">Formas de comprar</a>
+                    </section>
+                </section>
+            </section>
+
+            <footer class="f-horizontal">
+                <ul class="rrss">
+                    <li class="icon-elem"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="icon-elem"><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li class="icon-elem"><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+                <ul class="menu">
+                    <li class="mel"><a href="" class="menu-i" target="_blank">Accesibilidad Web</a></li>
+                    <li class="mel"><a href="" class="menu-i" target="_blank">Aviso de Privacidad</a></li>
+                    <li class="mel"><a href="" class="menu-i" target="_blank">Boletines</a></li>
+                    <li class="mel"><a href="" class="menu-i" target="_blank">Condiciones de Uso</a></li>
+                    <li class="mel"><a href="" class="menu-i" target="_blank">Mapas del Sitio</a></li>
+                    <li class="mel"><a href="" class="menu-i" target="_blank">Configuración de Cookies</a></li>
+                </ul>
+                <p>Ⓒ 2024. Starbucks Cofee Company. Reservados todos los derechos</p>
+            </footer>
         </section>
     </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
