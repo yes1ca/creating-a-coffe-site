@@ -446,8 +446,6 @@ margin-bottom: 4em;
         display: flex;
         justify-content: center;
         width: 90vh;
-        background-color: aqua;
-
     }
     .container{
         display: flex;
@@ -463,7 +461,6 @@ margin-bottom: 4em;
         position: relative;
     }
     .container-movil{
-        background-color: rebeccapurple;
         display: flex;
         flex-direction: column;
         align-items: center;
