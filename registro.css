@@ -123,7 +123,7 @@ body {
     justify-content: center;
     width: 65%;
     height: auto;
-    margin-left: 37em;
+    margin-left: 36em;
     margin-top: 0%;
 }
 
@@ -267,4 +267,111 @@ input{
     align-items: center;
     color: rgb(156, 155, 155);
     font-size: smaller;
+}
+
+/* Diseño responsivo*/
+@media screen and (max-width:900px) and (orientation: portrait){ 
+    .navbar{
+        display: flex;
+        justify-content: center
+        width:70%;
+
+    }
+    .navbar-left {
+        display: flex;
+        flex-direction: row;
+        height: 4em;
+    }
+    .navbar-left img{
+        height: 3.1em;
+        width: auto;
+    }
+    .navbar-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 1em;
+        height: 4em;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-fijo{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        position: relative;
+        padding-top: 0.5em;
+    }
+    .container-fijo img{
+        margin-bottom: 2em;
+    }
+    .container-movil{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        position: relative;
+        margin-left: 0;
+    }
+
+    
+    /*CUERPO - registro*/
+    .caja {
+        background-color: #ecebe5;
+        width: 100%;
+        align-content: flex-start;
+    }
+    .registro {
+        width: auto;
+        display: flex;
+        padding: 0;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+        font-weight: bold;
+        font-size: medium;
+        width: 100%;
+        padding-left: 4vh;
+    }
+    #form{
+        width: 60%;
+    }
+    #formulario h2{
+        font-weight: bolder;
+        font-size: medium;
+        width: 80%;
+    }
+    #formulario h4{
+        font-weight: bold;
+        font-size: smaller;
+        color: #0000008f;
+        margin-top: 0;
+    }
+    #formulario p{
+        font-weight: bold;
+        font-size: medium;
+        margin-top: 0;
+        color: #0000008f;
+    }
+    .f-vert{
+        margin-left: 14em;
+    }
+    .f-vert-text{
+        width: 13em;
+    }
 }
