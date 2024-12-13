@@ -47,3 +47,15 @@ Imágen de código HTML
 ![Vista previa](https://ibb.co/DCxTKc8)
 Imágen CSS
 ![Vista previa](https://ibb.co/TrMBdBL)
+
+#Clase 5. Página Menú completa
+Para la página de Menú fue una página relativamente sencilla, donde bastó con colocar el encabezado normal, en esta ocasión, hice correcciones a mi encabezado, las cuales modifiqué también en las demás páginas, al momento de pasar el cursor por las imágenes de los productos debía de tener un efecto de borde coloreado que resaltara la imágen, a mi percepción fue lo más complicado para esa página.
+
+#Clase 6. Diseño Responsivo para Rewards, Menu y Homepage
+Para los diseños responsivos utilizamos media queries, esta es la que a mi parecer fue la peor lección pues no todo se adapta correctamente, si bien se produce un cambio cuando la pantalla se achica, me parece que hay algunos ajustes que no conseguí corregir pues de hacerlo, se movía todo, sigo trabajando en ello, para que sea 100% responsivo
+
+#Clase 7. Páginas Inicio de Sesión / Únete
+Las páginas de iicio de sesión contaban con la pantalla partida como fue el caso de rewards, por lo que ya contaba con la base, para generar los formularios se usó <form> que permite generar estos campos de texto, contraseña, fecha, check box, etc, su creación es relativamente sencilla pero  me costó un poco de trabajo acomodarlos correctamente, pues no se centraban correctamente, o en su defecto no se alineaban al inicio bien, después entendí que debía establecer un display flex para que las casillas checkbox pudieran estar una abajo de otra-
+
+#Clase 8. Tener todo el sitio web starbucks completo (obligatorio) y crear un sitio web suyo con css (opcional)
+El sitio final está, trabajé en un sitio web extra (al día de hoy 13/12 no lo he terinado), ese se encuentra en otro epositorio como Yescasaurio.
